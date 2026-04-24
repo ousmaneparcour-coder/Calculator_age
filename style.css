@@ -1,0 +1,140 @@
+/* ===========================
+   RÉINITIALISATION DE BASE
+   On efface les styles par défaut du navigateur
+   =========================== */
+ 
+* {
+  margin: 0;           /* Supprime les marges automatiques */
+  padding: 0;          /* Supprime les espaces internes auto */
+  box-sizing: border-box; /* Les bordures ne débordent plus */
+}
+ 
+/* ===========================
+   PAGE ENTIÈRE
+   =========================== */
+ 
+body {
+  /* Couleur de fond gris clair */
+  background-color: #F0F0F0;
+ 
+  /* Flexbox pour centrer la carte au milieu de la page */
+  display: flex;
+  justify-content: center;  /* centre horizontalement */
+  align-items: center;      /* centre verticalement */
+  min-height: 100vh;        /* prend toute la hauteur de l'écran */
+ 
+  /* Police d'écriture */
+  font-family: 'Poppins', Arial, sans-serif;
+}
+ 
+/* ===========================
+   LA CARTE BLANCHE
+   =========================== */
+ 
+.carte {
+  background-color: white;
+  padding: 40px;           /* Espace intérieur */
+  border-radius: 16px 16px 100px 16px; /* Coin bas-droite très arrondi */
+  width: 100%;
+  max-width: 500px;        /* Largeur maximum */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Ombre portée */
+}
+ 
+/* ===========================
+   LES CHAMPS DE SAISIE
+   =========================== */
+ 
+.champs-saisie {
+  display: flex;    /* Aligne les 3 champs côte à côte */
+  gap: 16px;        /* Espace entre chaque champ */
+}
+ 
+.champ {
+  display: flex;
+  flex-direction: column;  /* label en haut, input en bas */
+  gap: 8px;
+}
+ 
+.champ label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;       /* Espacement entre lettres */
+  text-transform: uppercase;  /* Tout en majuscules */
+  color: #888;
+}
+ 
+.champ input {
+  width: 90px;
+  padding: 10px 12px;
+  font-size: 22px;
+  font-weight: 700;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  outline: none;              /* Supprime le contour bleu par défaut */
+  transition: border-color 0.3s; /* Animation douce au focus */
+}
+ 
+.champ input:focus {
+  /* Quand l'utilisateur clique dans le champ */
+  border-color: #854CE6;     /* Violet */
+}
+ 
+.champ input.erreur-input {
+  /* Quand il y a une erreur */
+  border-color: #FF5757;
+}
+ 
+.erreur {
+  font-size: 12px;
+  color: #FF5757;            /* Rouge pour les erreurs */
+  font-style: italic;
+  min-height: 16px;          /* Garde l'espace même si vide */
+}
+ 
+/* ===========================
+   LA LIGNE AVEC LE BOUTON
+   =========================== */
+ 
+.ligne-bouton {
+  display: flex;
+  align-items: center;
+  margin: 32px 0;
+}
+ 
+.separateur {
+  flex: 1;                   /* Prend tout l'espace disponible */
+  height: 1px;
+  background-color: #DDD;
+}
+ 
+#bouton-calculer {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;        /* Rond parfait */
+  background-color: #854CE6; /* Violet */
+  color: white;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;           /* Curseur main au survol */
+  transition: background-color 0.3s;
+}
+ 
+#bouton-calculer:hover {
+  /* Quand la souris passe sur le bouton */
+  background-color: #222;    /* Devient noir */
+}
+ 
+/* ===========================
+   LES RÉSULTATS
+   =========================== */
+ 
+.resultats p {
+  font-size: 56px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.1;
+}
+ 
+.nombre {
+  color: #854CE6;  /* Le nombre en violet, l'unité en noir */
+}

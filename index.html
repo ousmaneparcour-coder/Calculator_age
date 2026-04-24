@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+ 
+<head>
+  <!-- Infos générales de la page, pas visibles par l'utilisateur -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculateur d'âge</title>
+ 
+  <!-- On relie notre fichier CSS ici -->
+  <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+ 
+  <!-- La "carte" principale au centre de la page -->
+  <div class="carte">
+ 
+    <!-- Zone des champs de saisie -->
+    <div class="champs-saisie">
+ 
+      <!-- Champ JOUR -->
+      <div class="champ">
+        <label for="jour">JOUR</label>
+        <input type="number" id="jour" placeholder="JJ" min="1" max="31">
+        <span class="erreur" id="erreur-jour"></span>
+      </div>
+ 
+      <!-- Champ MOIS -->
+      <div class="champ">
+        <label for="mois">MOIS</label>
+        <input type="number" id="mois" placeholder="MM" min="1" max="12">
+        <span class="erreur" id="erreur-mois"></span>
+      </div>
+ 
+      <!-- Champ ANNÉE -->
+      <div class="champ">
+        <label for="annee">ANNÉE</label>
+        <input type="number" id="annee" placeholder="AAAA" min="1900">
+        <span class="erreur" id="erreur-annee"></span>
+      </div>
+ 
+    </div> <!-- fin .champs-saisie -->
+ 
+    <!-- Ligne avec le bouton calcul -->
+    <div class="ligne-bouton">
+      <div class="separateur"></div>
+      <button id="bouton-calculer" aria-label="Calculer l'âge">
+        &#x2193; <!-- flèche vers le bas -->
+      </button>
+    </div>
+ 
+    <!-- Zone des résultats -->
+    <div class="resultats">
+      <p><span class="nombre" id="resultat-annees">--</span> ans</p>
+      <p><span class="nombre" id="resultat-mois">--</span> mois</p>
+      <p><span class="nombre" id="resultat-jours">--</span> jours</p>
+    </div>
+ 
+  </div> <!-- fin .carte -->
+ 
+  <!-- On relie notre fichier JavaScript ici (TOUJOURS à la fin du body) -->
+  <script src="script.js"></script>
+ 
+</body>
+</html>
