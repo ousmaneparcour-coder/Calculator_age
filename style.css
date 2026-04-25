@@ -1,7 +1,5 @@
-/* ===========================
-   RÉINITIALISATION DE BASE
-   On efface les styles par défaut du navigateur
-   =========================== */
+/* RÉINITIALISATION DE BASE
+   On efface les styles par défaut du navigateur */
  
 * {
   margin: 0;           /* Supprime les marges automatiques */
@@ -9,9 +7,7 @@
   box-sizing: border-box; /* Les bordures ne débordent plus */
 }
  
-/* ===========================
-   PAGE ENTIÈRE
-   =========================== */
+/* PAGE ENTIÈRE */
  
 body {
   /* Couleur de fond gris clair */
@@ -27,9 +23,7 @@ body {
   font-family: 'Poppins', Arial, sans-serif;
 }
  
-/* ===========================
-   LA CARTE BLANCHE
-   =========================== */
+/* LA CARTE BLANCHE */
  
 .carte {
   background-color: white;
@@ -40,9 +34,7 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Ombre portée */
 }
  
-/* ===========================
-   LES CHAMPS DE SAISIE
-   =========================== */
+/* LES CHAMPS DE SAISIE */
  
 .champs-saisie {
   display: flex;    /* Aligne les 3 champs côte à côte */
@@ -91,9 +83,7 @@ body {
   min-height: 16px;          /* Garde l'espace même si vide */
 }
  
-/* ===========================
-   LA LIGNE AVEC LE BOUTON
-   =========================== */
+/* LA LIGNE AVEC LE BOUTON */
  
 .ligne-bouton {
   display: flex;
@@ -124,9 +114,7 @@ body {
   background-color: #222;    /* Devient noir */
 }
  
-/* ===========================
-   LES RÉSULTATS
-   =========================== */
+/* LES RÉSULTATS */
  
 .resultats p {
   font-size: 56px;
