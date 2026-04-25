@@ -1,7 +1,5 @@
-// ============================================================
 // ÉTAPE A : On "attrape" les éléments HTML dont on a besoin
-// document.getElementById() cherche un élément par son id=""
-// ============================================================
+// document.getElementById() cherche un élément par son id="
  
 const champJour   = document.getElementById('jour');
 const champMois   = document.getElementById('mois');
@@ -17,9 +15,7 @@ const zoneAnnees  = document.getElementById('resultat-annees');
 const zoneMois    = document.getElementById('resultat-mois');
 const zoneJours   = document.getElementById('resultat-jours');
 
-// ============================================================
 // ÉTAPE B : Vérifier que les données saisies sont correctes
-// ============================================================
  
 function nombreDeJoursDansMois(annee, mois) {
   // new Date(annee, mois, 0) : le 0ème jour du mois suivant
@@ -77,10 +73,7 @@ function validerEtCalculer() {
   }
 }
 
-
-// ============================================================
 // ÉTAPE C : Fonctions utilitaires (afficher / cacher erreurs)
-// ============================================================
  
 function afficherErreur(zoneErreur, champInput, message) {
   zoneErreur.textContent = message;    // Affiche le message
@@ -98,10 +91,7 @@ function effacerErreurs() {
   });
 }
 
-
-// ============================================================
 // ÉTAPE D : Calculer l'âge exact en années, mois, jours
-// ============================================================
  
 function calculerAge(jour, mois, annee) {
  
@@ -135,11 +125,8 @@ function calculerAge(jour, mois, annee) {
   animerNombre(zoneJours,  nbJours);
 }
 
-
-// ============================================================
 // ÉTAPE E : Animation des nombres (compte de 0 jusqu'au résultat)
-// ============================================================
- 
+
 function animerNombre(element, valeurFinale) {
   let compteur = 0;
   const pas = Math.max(1, Math.ceil(valeurFinale / 20));
@@ -156,10 +143,8 @@ function animerNombre(element, valeurFinale) {
   }, 30);
 }
  
-// ============================================================
 // ÉTAPE F : Écouter le clic sur le bouton
 // addEventListener attend un événement puis déclenche une action
-// ============================================================
  
 bouton.addEventListener('click', validerEtCalculer);
  
