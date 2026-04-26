@@ -23,6 +23,6 @@ Challenge : [Frontend Mentor — Age Calculator App](https://www.frontendmentor.
 
  Auteur
 
-- Groupe : Groupe 4
+- Groupe : Groupe 7
 - Chef de groupe : OUSMANE ALI ABAKAR
 - Université : Université de Ngaoundéré
